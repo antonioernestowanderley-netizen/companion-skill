@@ -1,0 +1,10 @@
+# NEVER commit a real person's private data — these are yours, kept local:
+skill/profile.md
+skill/interaction-ledger.md
+skill/passport.md
+
+# Compiled OCR binary (build locally with swiftc)
+skill/bin/ocr-vision
+
+# OS noise
+.DS_Store
