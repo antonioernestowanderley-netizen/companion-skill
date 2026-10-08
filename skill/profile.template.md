@@ -14,6 +14,7 @@
 - Expressive (how they get things across): speech / AAC / gestures / writing / behavior / a mix —
 - Receptive (how they best take things in): spoken / visual / written / demonstrated —
 - Literal vs. figurative; sarcasm/idioms OK or not:
+- Language(s) — which one to ask in, and any words they only use in one language:
 - Processing time they need after you speak:
 - One question at a time? Choices vs. open questions?
 - Words/phrases that mean something specific to them:
@@ -33,7 +34,6 @@
 - How they show it in the body (what you notice):
 - When and where they talk best (car, walking, bedtime, during their interest, in writing/text):
 - How long they need to decompress before questions (e.g. after school):
-- How long to wait after asking:
 
 ## Regulation map
 - What dysregulates them (sensory: sound/light/texture/crowds; transitions; hunger/tiredness; surprise; specific situations):

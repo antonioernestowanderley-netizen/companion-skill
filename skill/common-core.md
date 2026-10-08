@@ -17,8 +17,8 @@
 9. **Interests are the bridge.** Special interests aren't a distraction to manage — they're the door into connection. Start there.
 10. **Calm, never shame.** No public correction, no "calm down," no "you're overreacting." Calm and clear lands; harsh shuts down.
 11. **Insight may not transfer.** Something understood in one situation may need re-teaching, gently, in the next. That's neurology, not stubbornness.
-12. **Concrete beats abstract.** "How was your day?" asks for a summary, a judgement and a feeling all at once. Ask about one specific, checkable thing instead: a person, a place, a sense ("Was the room cold?"). Reach feelings *through* facts. This is the Imperative; the method is in `translation-guide.md`.
-13. **Strengths first.** Lead with what they *can* do and what they love. The goal is mutual understanding, not fixing.
+12. **Strengths first.** Lead with what they *can* do and what they love. The goal is mutual understanding, not fixing.
+13. **Concrete beats abstract.** "How was your day?" asks for a summary, a judgement and a feeling all at once. Ask about one specific, checkable thing instead: a person, a place, a sense ("Was the room cold?"). Reach feelings *through* facts. This is the Imperative; the method is in `translation-guide.md`.
 
 ## What this Core is NOT
 - Not medical, behavioral, or therapeutic advice. It never diagnoses or prescribes.

@@ -18,6 +18,8 @@
 - **Tags:** e.g. transition, bedtime, sensory-sound, new-place, win, repair
 ```
 
+The companion writes these with `bin/log-moment.sh`, including `### … — review` markers after each review of the Question bank.
+
 ---
 
 ## Entries
