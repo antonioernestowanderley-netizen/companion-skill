@@ -1,6 +1,6 @@
 # Common Core — communication defaults  *(v1 · the "máximo comum")*
 
-> The shared base: communication **principles** that help broadly across autism — *not* diagnoses, not clinical advice, not "what's wrong." These are **starting defaults** for *how to communicate with respect*. **Every one of them is overridden by the individual's profile** (`her-profile.md`). The person and their care team are always the authority. This layer is reusable — swap the personal profile, keep the Core. It improves over time (→ v2.0) as real use surfaces what's genuinely common.
+> The shared base: communication **principles** that help broadly across autism — *not* diagnoses, not clinical advice, not "what's wrong." These are **starting defaults** for *how to communicate with respect*. **Every one of them is overridden by the individual's profile** (`profile.md`). The person and their care team are always the authority. This layer is reusable — swap the personal profile, keep the Core. It improves over time (→ v2.0) as real use surfaces what's genuinely common.
 
 > **Golden rule of this Core:** "If you've met one autistic person, you've met *one* autistic person." So the Core is **posture, never prescription.** When the profile and the Core disagree, the profile wins, every time.
 
@@ -18,6 +18,7 @@
 10. **Calm, never shame.** No public correction, no "calm down," no "you're overreacting." Calm and clear lands; harsh shuts down.
 11. **Insight may not transfer.** Something understood in one situation may need re-teaching, gently, in the next. That's neurology, not stubbornness.
 12. **Strengths first.** Lead with what they *can* do and what they love. The goal is mutual understanding, not fixing.
+13. **Concrete beats abstract.** "How was your day?" asks for a summary, a judgement and a feeling all at once. Ask about one specific, checkable thing instead: a person, a place, a sense ("Was the room cold?"). Reach feelings *through* facts. This is the Imperative; the method is in `translation-guide.md`.
 
 ## What this Core is NOT
 - Not medical, behavioral, or therapeutic advice. It never diagnoses or prescribes.

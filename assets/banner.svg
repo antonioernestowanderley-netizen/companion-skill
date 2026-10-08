@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="companion: translate 'How was your day?' into 'Did Leo come to class today? Was the room cold? Good day, OK day, or hard day?'">
+  <title>companion — translate how we ask into how they think</title>
+  <rect width="1280" height="640" rx="32" fill="#F6F1E7"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="80" y="122" font-size="64" font-weight="700" fill="#2F2A24" letter-spacing="-1">companion</text>
+    <text x="80" y="172" font-size="28" fill="#6B6257">Translate how we ask into how they think.</text>
+
+    <!-- what we usually say -->
+    <text x="80" y="268" font-size="18" font-weight="600" fill="#9A9083" letter-spacing="2">WE USUALLY ASK</text>
+    <g opacity="0.75">
+      <rect x="80" y="290" width="400" height="96" rx="48" fill="#E7DFD1"/>
+      <text x="280" y="350" font-size="34" fill="#6B6257" text-anchor="middle">How was your day?</text>
+    </g>
+    <text x="80" y="430" font-size="22" fill="#9A9083">→ "fine" · "I don't know" · silence</text>
+
+    <!-- arrow -->
+    <path d="M528 338 H600" stroke="#7FA38A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M588 322 L608 338 L588 354" fill="none" stroke="#7FA38A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- how they think -->
+    <text x="656" y="268" font-size="18" font-weight="600" fill="#5E8A6C" letter-spacing="2">ASK INSTEAD — ONE AT A TIME</text>
+    <rect x="656" y="290" width="544" height="76" rx="38" fill="#FFFDF8" stroke="#7FA38A" stroke-width="3"/>
+    <text x="690" y="339" font-size="30" fill="#2F2A24">Did Leo come to class today?</text>
+    <rect x="656" y="382" width="400" height="76" rx="38" fill="#FFFDF8" stroke="#7FA38A" stroke-width="3"/>
+    <text x="690" y="431" font-size="30" fill="#2F2A24">Was the room cold?</text>
+    <rect x="656" y="474" width="544" height="76" rx="38" fill="#FFFDF8" stroke="#7FA38A" stroke-width="3"/>
+    <text x="690" y="523" font-size="30" fill="#2F2A24">Good day, OK day, or hard day?</text>
+
+    <text x="80" y="580" font-size="20" fill="#9A9083">A private, local-first skill for families of autistic people · learns what works for yours</text>
+  </g>
+</svg>
