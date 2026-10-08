@@ -1,6 +1,4 @@
-# NEVER commit real people's private data — it lives here, kept local:
-skill/data/
-# v1 locations (kept ignored so an un-migrated copy is never published)
+# NEVER commit a real person's private data — these are yours, kept local:
 skill/profile.md
 skill/interaction-ledger.md
 skill/passport.md
