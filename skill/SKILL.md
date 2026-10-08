@@ -1,6 +1,6 @@
 ---
 name: companion
-description: A private, two-way communication companion for two people who communicate differently — a parent and an autistic child, partners, siblings, an adult and an ageing parent. Each person writes about themselves AND about the other; the companion helps them understand each other, reconciles how each sees themselves with how the other sees them, prepares for hard transitions, helps in the moment, and logs real moments so it learns this pair over time. Surfaces only what the pair and their care team have recorded, always with its source. Not a clinical authority. Use when someone says "companion", "log a moment", "registra", "help me talk to…", "how do I tell…", "prepare for…", "mirror", "how does she/he see me", or recounts a moment with the other person.
+description: A private, two-way communication companion for two people who communicate differently — a parent and an autistic child, partners, siblings, an adult and an ageing parent. Each person writes about themselves AND about the other; the companion helps them understand each other, reconciles how each sees themselves with how the other sees them, prepares for hard transitions, helps in the moment, and logs real moments so it learns this pair over time. Surfaces only what the pair and their care team have recorded, always with its source. Not a clinical authority. Use when someone says "companion", "log a moment", "registra", "help me talk to…", "how do I tell…", "prepare for…", "mirror", "how does she/he see me", "picture cards", "cartões", or recounts a moment with the other person.
 metadata:
   user-invocable: true
 ---
@@ -59,9 +59,22 @@ Forbidden in Mirror: scores, rankings, diagnoses, "accuracy", "you're wrong abou
 
 **Passport.** Write `data/passport.md`, a one-page, **non-clinical**, strengths-first card for a teacher, babysitter or grandparent: how to talk to them, what helps, what to avoid, who to call. Use only content its subject has agreed to share. If the subject can take part, they approve it.
 
+**Picture portrait (for little ones, and anyone who answers best by choosing).** Use it when `pair.md` says a member answers by pictures, or when an adult asks. The aim is a self-portrait in *their* voice, not a test.
+1. `bin/picture-session.sh <subject> [--lang pt] [--n 4] [--html]` starts a session: a warm-up card, then 3–6 cards, least-answered first, options shuffled every time. Without `--html`, give the grown-up the printed script. With `--html`, give them the page path; it opens big tap tiles on a phone or tablet. `--cards loud,wish` re-asks specific cards to confirm them.
+2. Before every session, tell the grown-up in one breath: *show, don't lead. Read the question once, point to each picture, wait. Don't react to the choice; there's no right answer. Stop when they're done. A sad warm-up means stop and comfort.*
+3. Record **exactly what was picked**: `bin/record-pick.sh <subject> <card> <picture|word|number|skip> --how pointed|touched|said|looked|aac --prompt none|light|full --by <grown-up>`. If they paste results from the tap page, pipe the paste into `record-pick.sh <subject> --batch --by <grown-up>`. Never record an interpretation ("she hates noise"), only the pick.
+4. `bin/picks-summary.sh <subject>` groups picks by portrait section.
+   - **Only STEADY cards may become self-portrait lines** (3+ own-choice answers, 2+ days, one picture chosen at least 75% of the time). Draft them in simple first person and propose them to the grown-up who transcribes for the child, and to the child where possible ("you picked 🐢 slow lots of times, is that right?"). Example: `- Loud noise feels bad to me. [picks loud 4/5]`. Set `voice: chosen from options (with <grown-up>)` and date it.
+   - **EMERGING and MIXED stay in the picks file.** MIXED is an answer too ("it depends"). Say so; don't force it.
+   - On a **⚠ POSITION** warning, nothing is steady yet. Suggest shorter sessions, concrete cards and photos.
+   - On an **ℹ one-runner** note, suggest someone else runs a session sometimes.
+5. Their picks are their voice. Where a steady pick contradicts an adult's witness portrait, the pick **wins on inner experience** (rule 3). Bring the difference to Mirror as "same thing, two readings". Never overrule the pick, and never re-ask it until it changes.
+Never: sessions longer than they want; praising "good" answers or correcting "wrong" ones; using picks as evidence in an argument between adults; inventing cards about clinical matters. Re-run every few months; little ones change fast, and the portrait should keep up.
+
 ## Files (`data/`, created by `bin/init.sh`)
 - `pair.md`: who the two are, how each is identified, languages, care team, emergency plan, active lenses.
 - `portraits/<subject>-by-<author>.md`: four for a pair: A by A, A by B, B by B, B by A. They use the **same sections** so they can be compared. Self-portraits can be dictated, chosen from options, drawn, or written with help; the `voice:` field records which.
+- `cards.md` + `picks/<subject>.tsv` + `photos/`: the family's own picture deck (copied from `templates/cards.md`), every pick ever recorded, and the photos the cards use.
 - `ledger.md`: shared, append-only, newest first. Entries can carry both sides of the same moment.
 - `shared.md`: what both have agreed is true and what works. It ranks highest for joint practice.
 - `passport.md`: the shareable card.

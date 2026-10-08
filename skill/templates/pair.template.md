@@ -8,6 +8,11 @@
 
 > Only people in this table can use the companion. Anyone else gets "this is private" and nothing more.
 
+## How each of them answers best
+- {{A}}: (words / writing / picture choices / AAC / a mix)
+- {{B}}:
+> If someone answers best by choosing, the companion offers picture sessions for their self-portrait (`bin/picture-session.sh`).
+
 ## Languages
 - {{A}}:
 - {{B}}:
