@@ -1,38 +1,55 @@
-# Companion — a private skill for communicating with someone you love
+# Companion — a two-way skill for two people who communicate differently
 
-A small, local-first [OpenClaw](https://openclaw.ai) skill that helps you communicate with **one specific person who communicates differently** — for example, an autistic family member. It's a **memory-and-pattern tool**, not an advice engine: it remembers what actually works for *that person* and reflects it back to you, calmly, when you're tired or stuck.
+A small, local-first [OpenClaw](https://openclaw.ai) skill for **two specific people** who love each other and don't always understand each other: a parent and an autistic child, partners across neurotypes, siblings, an adult and an ageing parent.
 
-It was born from one family's real need. It is shared in the hope it helps others — **on the condition that it stays honest about what it is.**
+**Each person writes about themselves, and about the other.** The companion keeps both voices, helps in hard moments, translates between them, prepares for transitions, and holds up a **mirror**: where how you see yourself and how you're seen line up, and where they don't. It learns the pair from real moments. It never invents advice.
 
-## What it is — and is NOT
-- ✅ A way to hold, in one place, **how to communicate with this specific person**: how they take in language, what overwhelms them, what soothes them, what lights them up — and to keep learning it from real moments.
-- ✅ **Strengths-first.** Built around connection and dignity, never around "fixing" anyone.
-- ❌ **Not a clinical authority.** It does not diagnose, does not give medical/behavioral/therapy advice, and never invents strategies. It surfaces only what *you* and *their care team* have recorded, and otherwise points back to the professionals. **That refusal is the safety mechanism.** Please keep it.
+> Communication breaks down *between* people, not inside one of them (the *double empathy problem*, Milton 2012). So both people get a voice. This is not a file kept on someone. It's a mirror two people hold together.
 
-> "If you've met one autistic person, you've met *one* autistic person." The shared base is **posture, never prescription** — and a person's own profile always overrides it.
+## What it is, and what it is NOT
+- ✅ A shared memory of **how these two people reach each other**, built from both perspectives and from real moments.
+- ✅ **Strengths first. Behaviour, never character.** Built for connection and dignity, never for "fixing" anyone.
+- ✅ **Every suggestion cites its source** (`[self: Maya]`, `[ledger 2026-03-02]`, `[shared]`…). If it has no source, it doesn't say it.
+- ❌ **Not a clinical authority.** It doesn't diagnose and doesn't give medical, behavioural or therapy advice. If something isn't recorded, it says so and points back to the people and their care team. **That refusal is the safety mechanism. Please keep it.**
 
-## How it's built — three layers
-1. **`common-core.md`** — the shared base: evidence-informed *communication-posture* defaults (presume competence, behavior is communication, regulate before problem-solving, literal language, predictability, sensory-first, interests as the bridge, never shame…). Reusable across people. Never holds anyone's private specifics.
-2. **`profile.md`** — *this* person. You write it. **It overrides the Core** wherever they differ.
-3. **`interaction-ledger.md`** — append-only log of real moments. This is what makes it *theirs* over time, not generic.
+## The architecture
+| Layer | File | Who writes it | Authority |
+|---|---|---|---|
+| Self-portrait | `portraits/A-by-A.md` | A, in their own words (typed, dictated, chosen, drawn, AAC, with help) | **Inner experience:** what it's like, what they want |
+| Witness portrait | `portraits/A-by-B.md` | B, about A | **Observable effects:** what it looks like from outside. One person's view |
+| Ledger | `ledger.md` | either; both can add their side of the same moment | Track record |
+| Shared understanding | `shared.md` | only what **both** agreed | Highest, for joint practice |
+| Core + lenses | `common-core.md`, `lenses/autism.md` | the project | Defaults only; always overridden |
 
-The model reads them in order: Core → profile → ledger.
+Four portraits per pair, all with the **same sections**, so they can be compared line by line.
+
+## The modes
+- **Moment:** help now. Two actions at most, each with its source.
+- **Translate:** "how do I say this so it lands for them?" *Both* people can ask.
+- **Capture:** log a moment in seconds, by text, voice note or screenshot.
+- **Prepare:** a trip, new school or appointment becomes a heads-up script in the other person's format.
+- **Mirror:** the self-image vs. seen-image reconciliation, only when both are calm. It shows: common ground · seen from outside, not yet from inside · known inside, not yet seen · same thing, two readings. It never says who's right, never scores, and never shames masking.
+- **Distil:** turns raw captures into tagged entries, and proposes portrait updates *to each portrait's author*, with evidence.
+- **Passport:** a one-page, non-clinical card for teachers, sitters and grandparents.
 
 ## Setup
-1. Copy the `skill/` folder into your OpenClaw workspace skills dir (e.g. `~/.openclaw/workspace/skills/companion/`). It auto-discovers — no restart.
-2. `cp profile.template.md profile.md` and fill it with your person. `cp interaction-ledger.template.md interaction-ledger.md`.
-3. (Optional, macOS) build the local OCR helper so you can log from screenshots:
-   `swiftc -O bin/ocr-vision.swift -o bin/ocr-vision`
-4. Talk to your agent about a moment, or send it a voice note / screenshot (in your private chat). It captures, learns, and helps.
+1. Copy `skill/` into your OpenClaw skills dir, e.g. `~/.openclaw/workspace/skills/companion/`.
+2. `bin/init.sh <you> <them>` creates `data/` (git-ignored, files readable by your user only).
+3. Fill `data/pair.md`: who you both are, how each of you is identified, languages, care team, **emergency plan**.
+4. Each person fills their **self-portrait first**, then the other's. Portraits start `visible-to: author-only`. Set `visible-to: both` when you're ready to share.
+5. (Optional, macOS) local OCR for screenshots: `swiftc -O bin/ocr-vision.swift -o bin/ocr-vision`. Local voice notes: `pip install openai-whisper` (needs `ffmpeg`).
+6. Tests: `bash tests/run.sh`.
 
-## Privacy (please read)
-- **Your person's data is theirs.** `profile.md` and `interaction-ledger.md` are **git-ignored** by default so you don't accidentally publish them. Keep clinical reports off the repo entirely.
-- Voice/screenshot understanding runs **locally** (whisper + macOS Vision OCR) — nothing is sent to a cloud service by this skill.
-- If you ever share access (a care circle), share a **non-clinical "passport"** level — not the clinical profile.
-- **Consent & dignity:** the person this is about should, wherever possible, have a say in what's recorded and shared about them. Many of them are perfectly capable of it. Involve them.
+**Upgrading from v1?** Run `init.sh` in the same folder. Your old `profile.md` becomes `portraits/<them>-by-<you>.md` and your ledger is carried over. The originals are left in place.
 
-## If you want to take this further
-Aggregating real usage across families to find broader commonalities is powerful — and touches **vulnerable people's data**. Don't do it casually: explicit consent, de-identification, and partnership with the autistic community and clinicians are the bar. That care isn't friction — it's what makes it trustworthy.
+## Privacy and honesty (please read)
+- **Each person owns what they write.** Portraits are private until their author shares them. The access gate and visibility rules are enforced by the skill's instructions, and `side-by-side.sh` filters by visibility in code too.
+- **Where data goes, plainly:** voice notes and screenshots become text **on your machine**. But the agent's **language model reads your files**. If that model runs in the cloud (Claude, GPT, …), its provider receives them. If you need nothing to leave the device, run the agent on a local model.
+- Keep clinical reports out of the repo. Share outward only through the **passport**.
+- **Consent and dignity:** the person a portrait is about should, wherever possible, write their own portrait and approve what's shared. Many are perfectly capable of it. Children and people who need support still get a self-portrait: dictated, chosen from options, drawn, or written with help. The `voice:` field records how.
+
+## Taking it further
+Aggregating real use across families to find broader commonalities is powerful, and it touches **vulnerable people's data**. The bar is explicit consent, de-identification, and partnership with the autistic community and clinicians. That care isn't friction. It's what makes this trustworthy.
 
 ## License
-MIT — see [LICENSE](LICENSE). Provided as-is, with no warranty, and **no clinical claims of any kind.**
+MIT. See [LICENSE](LICENSE). Provided as-is, with no warranty and **no clinical claims of any kind.**

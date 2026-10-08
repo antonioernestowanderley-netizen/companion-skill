@@ -1,28 +1,30 @@
-# Common Core — communication defaults  *(v1 · the "máximo comum")*
+# Common Core — communication defaults *(v2 · the "máximo comum", the greatest common factor)*
 
-> The shared base: communication **principles** that help broadly across autism — *not* diagnoses, not clinical advice, not "what's wrong." These are **starting defaults** for *how to communicate with respect*. **Every one of them is overridden by the individual's profile** (`her-profile.md`). The person and their care team are always the authority. This layer is reusable — swap the personal profile, keep the Core. It improves over time (→ v2.0) as real use surfaces what's genuinely common.
+> The shared base: **principles** of respectful communication between two people who process the world differently. These aren't diagnoses, clinical advice, or "what's wrong" with anyone. They're **starting defaults**. **Every one of them is overridden by the pair's portraits and by `shared.md`.** The people themselves and their care team are always the authority. Condition-specific defaults live in `lenses/` and are switched on per pair.
 
-> **Golden rule of this Core:** "If you've met one autistic person, you've met *one* autistic person." So the Core is **posture, never prescription.** When the profile and the Core disagree, the profile wins, every time.
+> **Golden rule:** "If you've met one autistic person, you've met *one* autistic person." The same goes for everyone. The Core is **posture, never prescription.** When a portrait and the Core disagree, the portrait wins, every time.
 
-## The core posture (defaults — personalize always)
+## The core posture (cite as `[core N]`)
 
-1. **Presume competence.** Assume understanding and intelligence are there, even when expression is hard. Never talk down, never talk *about* them in front of them.
-2. **Behavior is communication.** Distress, withdrawal, "acting out" usually mean overload, an unmet need, fear, or loss of control — not defiance. Ask *what's this telling me?* before *how do I correct it?*
-3. **Regulation before everything.** A dysregulated person can't process, reason, or connect. Help them feel safe *first*; solve the problem *after*.
-4. **Be literal and direct.** Minimize sarcasm, idioms, hints, and ambiguity. Say the real thing, plainly.
-5. **One thing at a time.** One question, one step. Allow silent processing time — don't rush or fill the gap.
-6. **Predictability.** Warn before transitions and changes. "First ___, then ___." Surprise is a threat; a heads-up is a kindness.
-7. **Sensory-first.** Assume the environment may be the real issue — sound, light, touch, smell, crowding. Adjust the room before judging the reaction.
-8. **Offer clear choices**, not open-ended pressure. Two concrete options beats "what do you want to do?"
-9. **Interests are the bridge.** Special interests aren't a distraction to manage — they're the door into connection. Start there.
-10. **Calm, never shame.** No public correction, no "calm down," no "you're overreacting." Calm and clear lands; harsh shuts down.
-11. **Insight may not transfer.** Something understood in one situation may need re-teaching, gently, in the next. That's neurology, not stubbornness.
-12. **Strengths first.** Lead with what they *can* do and what they love. The goal is mutual understanding, not fixing.
+1. **Presume competence.** Assume understanding is there, even when expression is hard. Never talk down. Never talk *about* someone in front of them.
+2. **Misunderstanding is mutual.** When communication breaks, both sides missed something (*double empathy*). Ask "what did each of us mean, and what did each of us hear?" before asking "what's wrong with them?"
+3. **Behaviour is communication.** Distress, withdrawal and "acting out" usually signal overload, an unmet need, fear, or loss of control. Ask *what's this telling me?* before *how do I correct it?*
+4. **Regulation before everything.** A dysregulated person can't process, reason or connect. Safety first; problem-solving after.
+5. **Your calm is contagious.** Co-regulation runs both ways. The helper's own state counts: tired, rushed or angry spreads. Steady yourself first.
+6. **Be literal and direct.** Cut sarcasm, idioms, hints and ambiguity. Say the real thing, plainly.
+7. **One thing at a time.** One question, one step. Leave silent processing time; don't fill the gap.
+8. **Predictability.** Warn before transitions. Use "First ___, then ___." A surprise feels like a threat; a heads-up is a kindness.
+9. **Environment first.** The room may be the real problem: sound, light, touch, smell, crowding. Change the room before judging the reaction.
+10. **Clear choices** beat open-ended pressure. Two concrete options beat "what do you want to do?"
+11. **Interests are the bridge.** Deep interests are the door into connection, not a distraction to manage.
+12. **Calm, never shame.** No public correction, no "calm down", no "you're overreacting".
+13. **Repair matters more than perfection.** Every relationship ruptures. Saying "I got that wrong, I'm sorry" teaches more than never slipping.
+14. **Strengths first.** Lead with what each person *can* do and loves. The goal is mutual understanding, not fixing anyone.
 
 ## What this Core is NOT
-- Not medical, behavioral, or therapeutic advice. It never diagnoses or prescribes.
-- Not a substitute for the person's clinicians, who are the authority.
-- Not a description of any individual — only the **personal profile** describes a real person, and it always overrides this.
+- Not medical, behavioural or therapeutic advice. It never diagnoses or prescribes.
+- Not a substitute for clinicians.
+- Not a description of any individual. Only the portraits describe real people.
 
-## How the Core grows (v1 → v2.0 …)
-Real, consented, **de-identified** use surfaces patterns that turn out to be broadly common — those become candidate edits to *this* file, reviewed before they land. Anything that's specific to one person stays in *their* profile and never leaks into the Core. The Core only ever holds the genuinely shared, principle-level common ground.
+## How the Core grows
+Patterns that real, consented, **de-identified** use shows to be broadly common become *proposed* edits to this file, reviewed before they land. Anything specific to one person stays in their portraits and never leaks into the Core.
