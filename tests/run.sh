@@ -43,11 +43,13 @@ a=$(grep -n 'Raw note:\*\* second' $L | cut -d: -f1); b=$(grep -n 'Raw note:\*\*
 ok "log is newest-first and leaves no temp files"
 
 bin/log-moment.sh >/dev/null 2>&1 && fail "accepted empty text"
+bin/log-moment.sh 'plain capture with no questions' >/dev/null   # regression: N=0 must not run the R_ check (bash 3.2 seq 1 0 emits "1 0")
+grep -qF 'plain capture with no questions' $L || fail "N=0 capture rejected or lost"
 bin/log-moment.sh --asked "Q" --result maybe >/dev/null 2>&1 && fail "accepted an unknown result"
 bin/log-moment.sh --asked "Q" >/dev/null 2>&1 && fail "accepted a question with no result"
 bin/log-moment.sh --result yes >/dev/null 2>&1 && fail "accepted --result without --asked"
 msg=$(bin/log-moment.sh "note" --context 2>&1) && fail "accepted an option with no value"; grep -q "needs a value" <<<"$msg" || fail "no message for a missing value"
-ok "log refuses empty text, unknown results, missing results, stray --result, options with no value"
+ok "log refuses empty text, unknown results, missing results, stray --result, options with no value; and a plain N=0 capture still lands"
 
 chmod 600 $L
 mv $L ../real-ledger.md && ln -s ../real-ledger.md $L

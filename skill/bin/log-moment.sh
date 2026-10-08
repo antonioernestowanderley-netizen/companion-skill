@@ -43,7 +43,7 @@ while [ $# -gt 0 ]; do
                shift ;;
   esac
 done
-for i in $(seq 1 "$N"); do r="R_$i"; [ -n "${!r}" ] || die "question $i has no --result"; done
+i=1; while [ "$i" -le "$N" ]; do r="R_$i"; [ -n "${!r}" ] || die "question $i has no --result"; i=$((i+1)); done
 [ -n "$REVIEW" ] && [ "$N" -gt 0 ] && die "log a review on its own"
 [ -z "$TEXT$REVIEW" ] && [ "$N" -eq 0 ] && die "no text given"
 [ -f "$LEDGER" ] || die "ledger not found (copy interaction-ledger.template.md → interaction-ledger.md)"
